@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/utamaFragment">
+
+    <fragment
+        android:id="@+id/utamaFragment"
+        android:name="com.riko.sendi.jetpacknavigation.UtamaFragment"
+        android:label="fragment_utama"
+        tools:layout="@layout/fragment_utama" >
+        <action
+            android:id="@+id/action_utamaFragment_to_inputFragment2"
+            app:destination="@id/inputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.riko.sendi.jetpacknavigation.InputFragment"
+        android:label="InputFragment" >
+        <action
+            android:id="@+id/action_inputFragment_to_hasilFragment2"
+            app:destination="@id/hasilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hasilFragment"
+        android:name="com.riko.sendi.jetpacknavigation.HasilFragment"
+        android:label="fragment_hasil"
+        tools:layout="@layout/fragment_hasil" />
+</navigation>
